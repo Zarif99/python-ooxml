@@ -101,7 +101,7 @@ class Document(object):
             self.used_styles.append(name)
 
     def add_font_as_used(self, sz):
-        fsz = int(sz) / 2
+        fsz = int(float(sz)) / 2
         self.used_font_size[fsz] += 1
 
     def get_styles(self, name):
